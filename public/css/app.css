@@ -1,0 +1,503 @@
+/* Styles généraux */
+@font-face {
+    font-family: 'Burma';
+    src: url('/fonts/BurmaOutline-Regular.ttf') format('truetype'),
+         url('/fonts/Burma-Regular.ttf') format('truetype'),
+         url('/fonts/BurmaSoft-Regular.ttf') format('truetype'),
+         url('/fonts/BurmaRough-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    width: 1000px !important;
+    height: 200px !important;
+    object-fit: contain;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.btn-violet {
+    background-color: purple;
+}
+.btn-violet-reverse {
+    background-color: white !important;
+    border: 1px solid purple;
+    color: purple !important;
+}
+.accroche-btn {
+    background-color: purple;
+    padding: 12px;
+    color: #fff;
+    font-weight: bold;
+    width: fit-content;
+}
+.titre {
+  font-weight: 400;
+  font-style: normal;
+  }
+
+a {
+    text-decoration: none !important;
+}
+.fab {
+    display: block !important;
+    height: 10px !important;
+    color: black !important;
+}
+p{
+    text-align: justify;
+}
+.accroche {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    height: fit-content;
+}
+
+.accroche-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
+}
+.accroche-titre h1 {
+    font-family: 'Burma', sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.accroche-titre h2 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+}
+.img-a {
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+.img-b {
+    height: 500px;
+    width: 500px;
+}
+.accroche-texte {
+    margin-bottom: 20px;
+    width: 80%;
+}
+.nav-link-violet {
+    color: #fff !important;
+    font-weight: bold !important;
+    padding: 12px 12px 12px 12px !important;
+}
+.container-perso {
+    display: flex;
+    justify-content: space-between !important;
+    width: 75% !important;
+}
+.container-perso-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75% !important;
+}
+.profil-photo-nom {
+    display: flex;
+}
+.profil-photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.profil-nom {
+    margin-left: 50px;
+}
+.profil-photo {
+    margin-right: 50px;
+}
+.profil {
+    margin-top: 50px;
+}
+.candidatures {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.candidatures .accroche-titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offres-entete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offres-trellix {
+    height: 100px;
+    width: 500px;
+    position: relative;
+    top: 150px;
+}
+.offres-trellix img{
+    height: 100px;
+    width: 500px;
+}
+.offres-photo {
+    height: 500px;
+    width: 500px;
+}
+.offres-photo img{
+    height: 500px;
+    width: 500px;
+}
+.offres-internship {
+    position: relative;
+    bottom: 150px;
+}
+.offres-internship .accroche-titre h1 {
+    font-weight: 300;
+}
+
+.candidatures h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    
+}
+#navbarNav {
+    display: flex;
+    justify-content: right;
+}
+
+/* En-tête */
+header {
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navigation */
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.why, .what, .how, .go {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.ex-titre {
+    width: 20%;
+    text-align: center;
+}
+.ex-titre h1{
+    font-family: 'Burma', sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+}
+.ex-description {
+    margin-left: 50px ;
+    width: 70%;
+}
+.ex-description-btn {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 17px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+.offres {
+    display: flex;
+    margin-top:100px ;
+}
+.offres-droit{
+    width: 45%;
+    margin-left: 40px;
+    position: relative;
+    top: 80px;
+}
+.offres-gauche {
+    width: 45%;
+    margin-right: 40px;
+    position: relative;
+    bottom: 80px;
+}
+.offre {
+    border: 20px solid purple;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a:hover {
+    color: black;
+    font-weight: 600;
+}
+
+/* Contenu */
+.content {
+    padding: 20px 0;
+}
+
+/* Pied de page */
+footer {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.x-span {
+    font-family: 'Burma', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.container-dashboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dashboard-settings nav ul {
+    display: flex;
+    justify-content: right;
+}
+.nav-link-perso {
+    color: black !important;
+}
+.dash-header {
+    background-color: #efefef;
+    width: 65vw;
+    height: 10vh;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+.sidebar{
+    height: 90vh;
+    width: 10vw;
+    top: 10vh;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+.cards {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.droit, .gauche {
+
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.gauche > a, .droit > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+}
+.home-dashboard-card {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-dashboard-card h2 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+.home-dashboard-card .nombre {
+    font-size: 4rem;
+    margin-left: 3px;
+    width: 40%;
+    color: #b5b5b5;
+}
+.home-dashboard-card .graph {
+    width: 55%;
+    
+}
+
+.home-dashboard-card .autres {
+    margin-left: 3px;
+    font-size: 10px;
+}
+
+.maincontent {
+    left: 12vw;
+    top: 10vh;
+    max-width: 52vw;
+    position: relative;
+    z-index: 1;
+}
+
+.dash-active {
+    color: purple !important;
+
+}
+.dash-candidatures, .profil-candidat-dash{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.dash-candidatures-entete{
+    position: sticky;
+    z-index: 4;
+}
+
+.dash-candidatures-entete nav ul {
+    display: flex;
+    border-bottom: solid 2px purple;
+
+}
+.dash-candidatures-entete nav ul > li {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    cursor: pointer;
+}
+.dash-candidatures-entete nav ul .active {
+    background-color: purple;
+    color: #fff;
+}
+.document {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cv a, .lettre a {
+    color: purple;
+}
+.lettre {
+    text-align: right;
+}
+.profil-candidat-dash  .profil-nom {
+    margin-left: 0;
+}
+.profil-candidat-dash  .accroche-titre {
+    width: 100%;
+}
+.candidature-select {
+    margin-top: 60px;
+}
+.choix-decision {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    align-items: center;
+}
+
+.dashboard-settings nav ul {
+    color: black;
+}
+.dashboard-settings nav ul p{
+    margin-right: 15px;
+}
+.dash-tests {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px !important;
+    margin-top: 50px ;
+}
+.tests-boutons {
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 30px;    
+}
+.tests-boutons > * {
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+.ajouter, .ajouter i {
+    height: 28px;
+    width: 28px;
+    color: purple;
+}
+.tests-ligne {
+    display: flex;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.offres-ligne {
+
+    height: 100px !important;
+}
+.tests-colonne {
+    width: 23%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offres-colonne {
+    width: 38% !important;
+}
+.afficher-resultat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

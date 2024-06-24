@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+
+}
+@font-face {
+  font-family: 'Burma';
+  src: url('/fonts/BurmaOutline-Regular.ttf') format('truetype'),
+       url('/fonts/Burma-Regular.ttf') format('truetype'),
+       url('/fonts/BurmaSoft-Regular.ttf') format('truetype'),
+       url('/fonts/BurmaRough-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes rotate {
+    100%{
+      background-position: 15% 50%;
+    }   
+}
+
+:root{
+  --color-primary: ;   
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  height: 100vh;
+  padding: 0 24px;
+  animation: rotate 6s infinite alternate linear;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 35% );
+}
+
+.login-card {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin: 0 20px ;
+  padding: 70px 30px 44px;
+  border-radius: 20px;
+  background: rgb(24 21 36 / 66%);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.login-card > h2 {
+  color: rgb(255 255 255 / 98% );
+  margin: 0 0 12px;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.login-card > h3 {
+  color: rgb(255 255 255 / 98% );
+  font-family: 'Burma', sans-serif;
+  margin: 0 0 48px;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.login-form  {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.login-form > :is(input, button) {
+  width: 100%;
+  height: 56px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.login-form > input {
+  color: rgb(255 255 255 / 96%);
+  background:rgb(255 255 255 / 8%);
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.login-form > input::placeholder {
+  color: rgb(255 255 255 / 38%);
+}
+
+.login-div  {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.login-div > :is(input, button, select) {
+  width: 100%;
+  height: 56px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.login-div > input, .login-div > select {
+  color: rgb(255 255 255 / 96%);
+  background:rgb(255 255 255 / 8%);
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.login-div > input::placeholder{
+  color: rgb(255 255 255 / 38%);
+}
+
+.login-div-block  {
+  width: 90%;
+  margin: 0;
+  margin-left: auto;
+  display: grid;
+  gap: 16px;
+  align-items: end;
+}
+
+.login-div-block > :is(input, button, select) {
+  width: 100%;
+  height: 56px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.login-div-block > input, .login-div-block > select {
+  color: rgb(255 255 255 / 96%);
+  background:rgb(255 255 255 / 8%);
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.login-div-block > input::placeholder{
+  color: rgb(255 255 255 / 38%);
+}
+
+.login-content  {
+  width: 100%;
+  margin: 0;
+  margin-left: auto;
+  display: grid;
+  gap: 16px;
+  align-items: end;
+}
+
+.login-content > :is(input, button, select) {
+  width: 100%;
+  height: 56px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.login-content > input, .login-content > select {
+  color: rgb(255 255 255 / 96%);
+  background:rgb(255 255 255 / 8%);
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.login-content > input::placeholder{
+  color: rgb(255 255 255 / 38%);
+}
+
+
+option{
+  color: black;
+}
+
+
+.login-form > button {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: purple;
+  color: #f9f9f9;
+  border: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.375s;
+}
+
+.login-form > a {
+  color: rgb(255 255 255 / 98% );
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.login-div{
+  display: flex;
+}
+@media (width >= 448px ) {
+  .login-card {
+    margin: 0;
+    width: 70%;
+    min-width: 400px;
+  }   
+}
+
+@media (width >= 628px ) {
+  .login-card {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 44px;
+    width: 50%;
+    max-width: 500px;
+    min-width: auto;
+    display: flex;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: center;
+  }   
+}
