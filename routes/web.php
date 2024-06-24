@@ -86,23 +86,29 @@ Route::get('/test', function () {
     return view('test');
 });
 
-//les routes pour le crud EmployesController et employé
+//les routes pour le crud EmployesController et employé ,entretien
 
 //departement
 
 Route::get('/index',[DepartementController::class,'index'])->name('index');
 Route::get('create',[DepartementController::class,'create'])->name('create');
 Route::post('form',[DepartementController::class,'store'])->name('form');
-Route::get('{course}/edit',[DepartementController::class,'edit'])->name('edit');
-Route::put('{course}/update',[DepartementController::class,'update'])->name('update');
-Route::delete('{course}/delete',[DepartementController::class,'destroy'])->name('delete');
+Route::get('{Departement}/edit',[DepartementController::class,'edit'])->name('edit');
+Route::put('{Departement}/update',[DepartementController::class,'update'])->name('update');
+Route::delete('{Departement}/delete',[DepartementController::class,'destroy'])->name('delete');
 
 //employé
 
 Route::get('/index',[EmployesController::class,'index'])->name('index');
 Route::get('create',[EmployesController::class,'create'])->name('create');
 Route::post('form',[EmployesController::class,'store'])->name('form');
-Route::get('{course}/edit',[EmployesController::class,'edit'])->name('edit');
-Route::put('{course}/update',[EmployesController::class,'update'])->name('update');
-Route::delete('{course}/delete',[EmployesController::class,'destroy'])->name('delete');
+Route::get('{Employe}/edit',[EmployesController::class,'edit'])->name('edit');
+Route::put('{Employe}/update',[EmployesController::class,'update'])->name('update');
+Route::delete('{Employe}/delete',[EmployesController::class,'destroy'])->name('delete');
+
+//entretien
+
+Route::get('{Employe}/edit',[CandidatController::class,'editEntretien'])->name('edit');
+Route::put('{Employe}/update',[CandidatController::class,'updateEntretien'])->name('update');
+Route::delete('{Employe}/delete',[CandidatController::class,'destroyEntretien'])->name('delete');
 
